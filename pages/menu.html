@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fayrouz - Meniu</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="nav_list">
+
+      <ul>
+        <li><a href="../index.html">Acasă</a></li>
+        <li><a href="menu.html">Meniu</a></li>
+        <li><a href="info.html">Informații</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Контейнер для уведомлений -->
+  <div id="notification-container"></div>
+  <!-- Элемент для звукового уведомления -->
+  <audio id="notification-sound">
+    <source src="notification.mp3" type="audio/mpeg">
+    Browserul tău nu suportă elementul audio.
+  </audio>
+
+  <section id="menu">
+    <div class="container">
+      <h1 class="centered meniu">Meniu</h1>
+
+      <a href="../index.html" class="circle-link">
+        <img src="../img/imageslogo.jpg" alt="Logo" class="circle-logo">
+      </a>
+
+      <div class="menu-category">
+        <h2>Kebab</h2>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="../img/shaorma-pui.png" alt="Shaorma cu pui">
+            <p>Shaorma clasică (pui) – 70 lei</p>
+            <button class="add-to-cart" data-name="Shaorma cu pui" data-price="70">Adaugă în coș</button>
+          </div>
+          <div class="menu-item">
+            <img src="../img/shaorma-vita.png" alt="Shaorma cu vită">
+            <p>Shaorma cu vită – 75 lei</p>
+            <button class="add-to-cart" data-name="Shaorma cu vită" data-price="75">Adaugă în coș</button>
+          </div>
+          <div class="menu-item">
+            <img src="../img/shaorma-miel.png" alt="Shaorma cu miel">
+            <p>Shaorma cu miel – 85 lei</p>
+            <button class="add-to-cart" data-name="Shaorma cu miel" data-price="85">Adaugă în coș</button>
+          </div>
+          <div class="menu-item">
+            <img src="../img/shaorma-vegetariana.png" alt="Shaorma vegetariană">
+            <p>Shaorma vegetariană – 100 lei</p>
+            <button class="add-to-cart" data-name="Shaorma vegetariană" data-price="100">Adaugă în coș</button>
+          </div>
+          <div class="menu-item">
+            <img src="../img/shaorma-pui-special.png" alt="Shaorma cu pui special">
+            <p>Shaorma cu pui special – 90 lei</p>
+            <button class="add-to-cart" data-name="Shaorma cu pui special" data-price="90">Adaugă în coș</button>
+          </div>
+          <div class="menu-item">
+            <img src="../img/shaorma-vegeta.png" alt="Shaorma vegană">
+            <p>Shaorma vegană – 100 lei</p>
+            <button class="add-to-cart" data-name="Shaorma vegană" data-price="100">Adaugă în coș</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-category">
+        <h2>Salate</h2>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="../img/salata-pui-avocado.png" alt="Salată cu pui și avocado">
+            <p>Salată cu pui și avocado – 150 lei</p>
+            <button class="add-to-cart" data-name="Salată cu pui și avocado" data-price="150">Adaugă în coș</button>
+          </div>
+          <div class="menu-item">
+            <img src="../img/salata-greceasca.png" alt="Salată grecească">
+            <p>Salată grecească – 160 lei</p>
+            <button class="add-to-cart" data-name="Salată grecească" data-price="160">Adaugă în coș</button>
+          </div>
+          <div class="menu-item">
+            <img src="../img/salata-ton.png" alt="Salată cu ton">
+            <p>Salată cu ton – 155 lei</p>
+            <button class="add-to-cart" data-name="Salată cu ton" data-price="155">Adaugă în coș</button>
+          </div>
+          <div class="menu-item">
+            <img src="../img/salata-legume.png" alt="Salată de legume">
+            <p>Salată de legume – 130 lei</p>
+            <button class="add-to-cart" data-name="Salată de legume" data-price="130">Adaugă în coș</button>
+          </div>
+          <div class="menu-item">
+            <img src="../img/salata-pastrama.png" alt="Salată cu pastrama">
+            <p>Salată cu pastrama de vită – 180 lei</p>
+            <button class="add-to-cart" data-name="Salată cu pastrama de vită" data-price="180">Adaugă în coș</button>
+          </div>
+          <div class="menu-item">
+            <img src="../img/salata-hummus.png" alt="Salată cu hummus">
+            <p>Salată cu hummus și legume – 180 lei</p>
+            <button class="add-to-cart" data-name="Salată cu hummus" data-price="180">Adaugă în coș</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-category">
+        <h2>Băuturi</h2>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="../img/bautura.png" alt="Băutură carbogazoasă">
+            <p>Băutură carbogazoasă (500 ml) – 28 lei</p>
+            <button class="add-to-cart" data-name="Băutură carbogazoasă" data-price="28">Adaugă în coș</button>
+          </div>
+          <div class="menu-item">
+            <img src="../img/apa.png" alt="Apă minerală">
+            <p>Apă minerală – 24 lei</p>
+            <button class="add-to-cart" data-name="Apă minerală" data-price="24">Adaugă în coș</button>
+          </div>
+          <div class="menu-item">
+            <img src="../img/suc.png" alt="Suc natural">
+            <p>Suc (natural, 250 ml) – 32 lei</p>
+            <button class="add-to-cart" data-name="Suc natural" data-price="32">Adaugă în coș</button>
+          </div>
+          <div class="menu-item">
+            <img src="../img/cafea.png" alt="Cafea">
+            <p>Cafea – 40 lei</p>
+            <button class="add-to-cart" data-name="Cafea" data-price="40">Adaugă în coș</button>
+          </div>
+          <div class="menu-item">
+            <img src="../img/smoothie.png" alt="Smoothie">
+            <p>Smoothie de fructe – 70 lei</p>
+            <button class="add-to-cart" data-name="Smoothie de fructe" data-price="70">Adaugă în coș</button>
+          </div>
+          <div class="menu-item">
+            <img src="../img/cocktail.png" alt="Cocktail">
+            <p>Cocktail – 70 lei</p>
+            <button class="add-to-cart" data-name="Cocktail" data-price="70">Adaugă în coș</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-category">
+        <h2>Deserturi</h2>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="../img/placinta-mere.png" alt="Plăcintă cu mere">
+            <p>Plăcintă cu mere – 45 lei</p>
+            <button class="add-to-cart" data-name="Plăcintă cu mere" data-price="45">Adaugă în coș</button>
+          </div>
+          <div class="menu-item">
+            <img src="../img/tort-ciocolata.png" alt="Tort de ciocolată">
+            <p>Tort de ciocolată – 150 lei</p>
+            <button class="add-to-cart" data-name="Tort de ciocolată" data-price="150">Adaugă în coș</button>
+          </div>
+          <div class="menu-item">
+            <img src="../img/chec-morcovi.png" alt="Chec cu morcovi">
+            <p>Chec cu morcovi – 150 lei</p>
+            <button class="add-to-cart" data-name="Chec cu morcovi" data-price="150">Adaugă în coș</button>
+          </div>
+          <div class="menu-item">
+            <img src="../img/briose-ciocolata.png" alt="Brioșe cu ciocolată">
+            <p>Brioșe cu ciocolată – 160 lei</p>
+            <button class="add-to-cart" data-name="Brioșe cu ciocolată" data-price="160">Adaugă în coș</button>
+          </div>
+          <div class="menu-item">
+            <img src="../img/tiramisu..png" alt="Tiramisu">
+            <p>Tiramisu – 170 lei</p>
+            <button class="add-to-cart" data-name="Tiramisu" data-price="170">Adaugă în coș</button>
+          </div>
+        </div>
+      </div>
+
+      <a href="menu.html" class="button">Înapoi Sus</a>
+    </div>
+  </section>
+  <a href="cart.html" class="floating-circle">
+    <img src="../img/cart.png" alt="Floating Logo">
+</a>
+  <footer>
+    <footer>
+      <div class="footer-content">
+        <div class="contact-info">
+          <p><strong>Contacte:</strong></p>
+          <p>Telefon: 0236-2-88-31</p>
+          <p>Adresa: Strada Națională 30A, Ungheni, Republica Moldova</p>
+        </div>
+        <div class="map">
+          <button id="open-map">Deschiderea Hărții</button>
+        </div>
+      </div>
+
+      <div id="map-modal" class="map-modal">
+        <div class="map-container">
+          <button class="close-btn">Închide</button>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2701.2893382877223!2d27.79734037648239!3d47.204856013221224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97d6dc9dbd9e9%3A0x61d10c9a8e4bb86e!2sStrada%20Na%C8%9Bional%C4%83%2030A%2C%20Ungheni%2C%20Moldova!5e0!3m2!1sru!2s!4v1708350000000"
+            width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+      </div>
+    </footer>
+  
+
+    <div class="social-links">
+      <a href="https://www.instagram.com/fayrouz.ungheni?igsh=MWlidXF6dno0NnF6cQ==" target="_blank"
+        class="social-button instagram">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://www.tiktok.com/@fayrouz.ungheni?_t=ZM-8tYsMxz7r1x&_r=1" target="_blank"
+        class="social-button tiktok">
+        <i class="fab fa-tiktok"></i> TikTok
+      </a>
+    </div>
+    <button onclick="window.location.href='../pages/recenzii.html'">Recenzii</button>
+    <p>&copy; Acest website a fost realizat în cadrul competiției „Tekwill Junior Ambasadors” organizată de
+      proiectul „Tekwill în Fiecare Școală” și nu reflectă neapărat opinia proiectului.</p>
+  </footer>
+
+  <!-- Подключение скрипта внизу страницы -->
+ 
+    <script src="../js/script.js"></script>
+   
+</body>
+
+</html>
